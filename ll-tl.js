@@ -12701,7 +12701,17 @@ const ReportSheet = ({ compound }) => {
                               ]
                             }
                           ),
-                          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[#676D6F] font-light ll-font-300 text-[12px] font-aftika", children: "Transparent Labs has at least 100% of the active ingredient in every serving." })
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "p",
+                            {
+                              style: {
+                                color: "#676D6F",
+                                fontSize: "12px",
+                                fontWeight: 300
+                              },
+                              children: "Transparent Labs has at least 100% of the active ingredient in every serving."
+                            }
+                          )
                         ] }) : /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
                           /* @__PURE__ */ jsxRuntimeExports.jsxs(
                             "p",
@@ -12728,7 +12738,17 @@ const ReportSheet = ({ compound }) => {
                               ]
                             }
                           ),
-                          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[#676D6F] font-light ll-font-300 text-[12px] font-aftika", children: "Transparent Labs has at least 100% of the active ingredient in every serving." })
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "p",
+                            {
+                              style: {
+                                color: "#676D6F",
+                                fontSize: "12px",
+                                fontWeight: 300
+                              },
+                              children: "Transparent Labs has at least 100% of the active ingredient in every serving."
+                            }
+                          )
                         ] }),
                         /* @__PURE__ */ jsxRuntimeExports.jsx(
                           "a",
