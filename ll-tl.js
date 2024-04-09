@@ -10245,14 +10245,12 @@ const ElementChart = ({
       /* @__PURE__ */ jsxRuntimeExports.jsx("p", { style: {
         fontSize: "12px",
         fontWeight: 500,
-        color: "#333333",
-        fontFamily: "Aftika"
+        color: "#333333"
       }, children: label }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("p", { style: {
         fontSize: "9px",
         fontWeight: 300,
-        color: "#6E7A7E",
-        fontFamily: "Aftika"
+        color: "#6E7A7E"
       }, children: /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
         "Limit ",
         /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "font-default font-aftika", children: [
@@ -10279,7 +10277,6 @@ const ElementChart = ({
             fontSize: "9px",
             color: "#7FC1ED",
             paddingLeft: "1px",
-            fontFamily: "Aftika",
             fontWeight: 300
           }, children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: {
             position: "absolute",
@@ -10309,13 +10306,10 @@ const ElementChart = ({
                 fontSize: "9px",
                 color: "#333333",
                 paddingLeft: "1px",
-                fontFamily: "Aftika",
                 fontWeight: 300
               },
               id: "claim-label",
-              children: /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { style: {
-                fontFamily: "Aftika"
-              }, className: "font-default font-aftika", children: [
+              children: /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { style: {}, className: "font-default font-aftika", children: [
                 "< ",
                 value,
                 " µg"
