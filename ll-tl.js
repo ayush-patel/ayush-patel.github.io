@@ -1,3 +1,15 @@
+(function() {
+  "use strict";
+  try {
+    if (typeof document != "undefined") {
+      var elementStyle = document.createElement("style");
+      elementStyle.appendChild(document.createTextNode("@font-face {\n    font-family: 'Aftika';\n    src: url('/assets/Aftika_Black-Cwm6J_OZ.woff2') format('opentype');\n    font-display: swap;\n    font-style: normal;\n    font-weight: 900;\n  }\n\n  @font-face {\n    font-family: 'Aftika';\n    src: url('/assets/Aftika_Extra_Bold-BPTMWUJS.woff2')\n      format('opentype');\n    font-display: swap;\n    font-style: normal;\n    font-weight: 800;\n  }\n\n  @font-face {\n    font-family: 'Aftika';\n    src: url('/assets/Aftika_Bold-DnilZwAP.woff2')\n      format('woff2');\n    font-display: swap;\n    font-style: normal;\n    font-weight: 700;\n  }\n  \n  @font-face {\n    font-family: 'Aftika';\n    src: url('/assets/Aftika_Semi_Bold-D3JV1ANz.woff2')\n      format('opentype');\n    font-display: swap;\n    font-style: normal;\n    font-weight: 500;\n  }\n  \n  @font-face {\n    font-family: 'Aftika';\n    src: url('/assets/Aftika_Regular-Ou1f2DXc.woff2')\n      format('opentype');\n    font-display: swap;\n    font-style: normal;\n    font-weight: 400;\n  }\n\n\n  @font-face {\n    font-family: 'Aftika';\n    src: url('/assets/Aftika_Light-B-fyAM6Q.woff2')\n      format('opentype');\n    font-display: swap;\n    font-style: normal;\n    font-weight: 300;\n  }\n  @font-face {\n    font-family: 'Aftika';\n    src: url('/assets/Aftika_Extra_Light-BCCw26Ee.woff2')\n      format('opentype');\n    font-display: swap;\n    font-style: normal;\n    font-weight: 200;\n  }"));
+      document.head.appendChild(elementStyle);
+    }
+  } catch (e) {
+    console.error("vite-plugin-css-injected-by-js", e);
+  }
+})();
 function _mergeNamespaces(n2, m2) {
   for (var i = 0; i < m2.length; i++) {
     const e = m2[i];
