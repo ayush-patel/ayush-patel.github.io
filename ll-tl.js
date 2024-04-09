@@ -10378,8 +10378,7 @@ const ProgressChart = ({ compound }) => {
                     {
                       style: {
                         fontSize: "14px",
-                        fontWeight: 500,
-                        fontFamily: "Aftika"
+                        fontWeight: 500
                       },
                       children: compoundLabel
                     }
@@ -12544,7 +12543,6 @@ const ReportSheet = ({ compound }) => {
           fontWeight: 400,
           textDecoration: "underline",
           fontSize: "10px",
-          fontFamily: "Aftika",
           textUnderlineOffset: "4px"
         },
         children: "View Testing Report"
@@ -16191,8 +16189,7 @@ const Card = ({ footer, compound }) => {
                     style: {
                       color: "#6E7A7E",
                       fontSize: "10px",
-                      fontWeight: 300,
-                      fontFamily: "Aftika"
+                      fontWeight: 300
                     },
                     className: "text-[#6E7A7E] text-[10px] font-light ll-font-300 font-aftika",
                     children: "Every batch is tested by an ISO 17025 certified lab to verify active ingredients and product purity"
@@ -16298,8 +16295,7 @@ const LiveTestingSection = () => {
                 style: {
                   fontSize: "10px",
                   color: "#333333",
-                  fontWeight: "normal",
-                  fontFamily: "Aftika"
+                  fontWeight: "normal"
                 },
                 className: "text-[10px] text-[#333333] font-normal ll-font-400 font-aftika",
                 children: "Live Testing"
@@ -16312,8 +16308,7 @@ const LiveTestingSection = () => {
         "p",
         {
           style: {
-            fontSize: "12px",
-            fontFamily: "Aftika"
+            fontSize: "12px"
           },
           className: "text-[12px] font-aftika",
           children: [
@@ -16321,7 +16316,6 @@ const LiveTestingSection = () => {
             /* @__PURE__ */ jsxRuntimeExports.jsx(
               "span",
               {
-                style: { fontFamily: "Aftika" },
                 className: "font-default font-aftika",
                 children: " 02/13/2024 "
               }
@@ -16330,17 +16324,14 @@ const LiveTestingSection = () => {
               "span",
               {
                 style: {
-                  color: "#6E7A7E",
-                  fontFamily: "Aftika"
+                  color: "#6E7A7E"
                 },
                 className: "text-[#6E7A7E]",
                 children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsx(
                     "span",
                     {
-                      style: {
-                        fontFamily: "Aftika"
-                      },
+                      style: {},
                       className: "font-default font-aftika",
                       children: "("
                     }
@@ -16403,8 +16394,7 @@ const LiveTestingSection = () => {
               style: {
                 fontSize: "10px",
                 color: "#333333",
-                fontWeight: "normal",
-                fontFamily: "Aftika"
+                fontWeight: "normal"
               },
               className: "text-[10px] text-[#333333] font-normal ll-font-400 font-aftika",
               children: "Live Testing"
@@ -16417,8 +16407,7 @@ const LiveTestingSection = () => {
       "p",
       {
         style: {
-          fontSize: "12px",
-          fontFamily: "Aftika"
+          fontSize: "12px"
         },
         className: "text-[12px] font-aftika",
         children: [
@@ -16435,17 +16424,14 @@ const LiveTestingSection = () => {
             "span",
             {
               style: {
-                color: "#6E7A7E",
-                fontFamily: "Aftika"
+                color: "#6E7A7E"
               },
               className: "text-[#6E7A7E]",
               children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
                   "span",
                   {
-                    style: {
-                      fontFamily: "Aftika"
-                    },
+                    style: {},
                     className: "font-default font-aftika",
                     children: "("
                   }
