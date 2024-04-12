@@ -10079,17 +10079,17 @@ function getDefaultConfig() {
   };
 }
 const twMerge = /* @__PURE__ */ createTailwindMerge(getDefaultConfig);
-function cn(...inputs) {
+function lcn(...inputs) {
   return twMerge(clsx(inputs));
 }
-function calculatePercentage(actual, total) {
+function lcalculatePercentage(actual, total) {
   if (total === 0) {
     return 0;
   }
   const percentage = actual / total * 100;
   return Math.ceil(percentage);
 }
-const CREATINE_ELEMENTS = [
+const LCREATINE_ELEMENTS = [
   {
     element: "Arsenic",
     limit: 10,
@@ -10111,7 +10111,7 @@ const CREATINE_ELEMENTS = [
     value: 0.047
   }
 ];
-const PROTEIN_ELEMENTS = [
+const LPROTEIN_ELEMENTS = [
   {
     element: "Arsenic",
     limit: 10,
@@ -10133,10 +10133,10 @@ const PROTEIN_ELEMENTS = [
     value: 0.234
   }
 ];
-const NegativeContent = ({
+const LNegativeContent = ({
   compound
 }) => {
-  const elementMap = compound === "creatine" ? CREATINE_ELEMENTS : PROTEIN_ELEMENTS;
+  const elementMap = compound === "creatine" ? LCREATINE_ELEMENTS : LPROTEIN_ELEMENTS;
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
     {
@@ -10199,12 +10199,12 @@ const NegativeContent = ({
               marginBottom: "0px"
             },
             children: elementMap.map((element, index2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-              ElementChart,
+              LElementChart,
               {
                 label: element.element,
                 limit: element.limit,
                 value: element.value,
-                valuePercentage: calculatePercentage(element.value, element.limit)
+                valuePercentage: lcalculatePercentage(element.value, element.limit)
               },
               index2
             ))
@@ -10226,7 +10226,7 @@ const NegativeContent = ({
     }
   );
 };
-const ElementChart = ({
+const LElementChart = ({
   label,
   limit,
   value,
@@ -10322,7 +10322,7 @@ const ElementChart = ({
     ] })
   ] });
 };
-const PositiveContent = ({
+const LPositiveContent = ({
   compound
 }) => {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -10337,11 +10337,11 @@ const PositiveContent = ({
         paddingBottom: "16px",
         width: "100%"
       },
-      children: /* @__PURE__ */ jsxRuntimeExports.jsx(ProgressChart, { compound })
+      children: /* @__PURE__ */ jsxRuntimeExports.jsx(LProgressChart, { compound })
     }
   );
 };
-const ProgressChart = ({ compound }) => {
+const LProgressChart = ({ compound }) => {
   const compoundLabel = compound === "creatine" ? "Creatine" : "Protein";
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
@@ -11729,12 +11729,12 @@ var styleHookSingleton = function() {
 };
 var styleSingleton = function() {
   var useStyle = styleHookSingleton();
-  var Sheet2 = function(_a) {
+  var Sheet = function(_a) {
     var styles2 = _a.styles, dynamic = _a.dynamic;
     useStyle(styles2, dynamic);
     return null;
   };
-  return Sheet2;
+  return Sheet;
 };
 var zeroGap = {
   left: 0,
@@ -12455,28 +12455,28 @@ const $5d3850c4d0b4e6c7$export$7c6e2c02157bb7d2 = $5d3850c4d0b4e6c7$export$b6d95
 const $5d3850c4d0b4e6c7$export$f99233281efd08a0 = $5d3850c4d0b4e6c7$export$16f7638e4a34b909;
 const $5d3850c4d0b4e6c7$export$393edc798c47379d = $5d3850c4d0b4e6c7$export$94e94c2ec2c954d5;
 const $5d3850c4d0b4e6c7$export$f39c2d165cd861fe = $5d3850c4d0b4e6c7$export$fba2fb7cd781b7ac;
-const SheetOverlay$1 = "_SheetOverlay_oldqw_1";
-const SheetContent$1 = "_SheetContent_oldqw_19";
-const SheetHeader$1 = "_SheetHeader_oldqw_55";
+const SheetOverlay = "_SheetOverlay_oldqw_1";
+const SheetContent = "_SheetContent_oldqw_19";
+const SheetHeader = "_SheetHeader_oldqw_55";
 const SheetFooter = "_SheetFooter_oldqw_66";
-const SheetTitle$1 = "_SheetTitle_oldqw_77";
-const SheetDescription$1 = "_SheetDescription_oldqw_85";
+const SheetTitle = "_SheetTitle_oldqw_77";
+const SheetDescription = "_SheetDescription_oldqw_85";
 const styles$3 = {
-  SheetOverlay: SheetOverlay$1,
-  SheetContent: SheetContent$1,
-  SheetHeader: SheetHeader$1,
+  SheetOverlay,
+  SheetContent,
+  SheetHeader,
   SheetFooter,
-  SheetTitle: SheetTitle$1,
-  SheetDescription: SheetDescription$1
+  SheetTitle,
+  SheetDescription
 };
-const Sheet = $5d3850c4d0b4e6c7$export$be92b6f5f03c0fe9;
-const SheetTrigger = $5d3850c4d0b4e6c7$export$41fb9f06171c75f4;
-const SheetClose = $5d3850c4d0b4e6c7$export$f39c2d165cd861fe;
-const SheetPortal = $5d3850c4d0b4e6c7$export$602eac185826482c;
-const SheetOverlay = reactExports.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+const LSheet = $5d3850c4d0b4e6c7$export$be92b6f5f03c0fe9;
+const LSheetTrigger = $5d3850c4d0b4e6c7$export$41fb9f06171c75f4;
+const LSheetClose = $5d3850c4d0b4e6c7$export$f39c2d165cd861fe;
+const LSheetPortal = $5d3850c4d0b4e6c7$export$602eac185826482c;
+const LSheetOverlay = reactExports.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ jsxRuntimeExports.jsx(
   $5d3850c4d0b4e6c7$export$c6fdb837b070b4ff,
   {
-    className: cn(
+    className: lcn(
       styles$3.SheetOverlay,
       className
     ),
@@ -12484,55 +12484,55 @@ const SheetOverlay = reactExports.forwardRef(({ className, ...props }, ref) => /
     ref
   }
 ));
-SheetOverlay.displayName = $5d3850c4d0b4e6c7$export$c6fdb837b070b4ff.displayName;
-const SheetContent = reactExports.forwardRef(({ className, children, ...props }, ref) => /* @__PURE__ */ jsxRuntimeExports.jsxs(SheetPortal, { children: [
-  /* @__PURE__ */ jsxRuntimeExports.jsx(SheetOverlay, {}),
+LSheetOverlay.displayName = $5d3850c4d0b4e6c7$export$c6fdb837b070b4ff.displayName;
+const LSheetContent = reactExports.forwardRef(({ className, children, ...props }, ref) => /* @__PURE__ */ jsxRuntimeExports.jsxs(LSheetPortal, { children: [
+  /* @__PURE__ */ jsxRuntimeExports.jsx(LSheetOverlay, {}),
   /* @__PURE__ */ jsxRuntimeExports.jsx(
     $5d3850c4d0b4e6c7$export$7c6e2c02157bb7d2,
     {
       ref,
-      className: cn(styles$3.SheetContent, className),
+      className: lcn(styles$3.SheetContent, className),
       ...props,
       children
     }
   )
 ] }));
-SheetContent.displayName = $5d3850c4d0b4e6c7$export$7c6e2c02157bb7d2.displayName;
-const SheetHeader = ({
+LSheetContent.displayName = $5d3850c4d0b4e6c7$export$7c6e2c02157bb7d2.displayName;
+const LSheetHeader = ({
   className,
   ...props
 }) => /* @__PURE__ */ jsxRuntimeExports.jsx(
   "div",
   {
-    className: cn(
+    className: lcn(
       styles$3.SheetHeader,
       className
     ),
     ...props
   }
 );
-SheetHeader.displayName = "SheetHeader";
-const SheetTitle = reactExports.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+LSheetHeader.displayName = "SheetHeader";
+const LSheetTitle = reactExports.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ jsxRuntimeExports.jsx(
   $5d3850c4d0b4e6c7$export$f99233281efd08a0,
   {
     ref,
-    className: cn(styles$3.SheetTitle, className),
+    className: lcn(styles$3.SheetTitle, className),
     ...props
   }
 ));
-SheetTitle.displayName = $5d3850c4d0b4e6c7$export$f99233281efd08a0.displayName;
-const SheetDescription = reactExports.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+LSheetTitle.displayName = $5d3850c4d0b4e6c7$export$f99233281efd08a0.displayName;
+const LSheetDescription = reactExports.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ jsxRuntimeExports.jsx(
   $5d3850c4d0b4e6c7$export$393edc798c47379d,
   {
     ref,
-    className: cn(styles$3.SheetDescription, className),
+    className: lcn(styles$3.SheetDescription, className),
     ...props
   }
 ));
-SheetDescription.displayName = $5d3850c4d0b4e6c7$export$393edc798c47379d.displayName;
+LSheetDescription.displayName = $5d3850c4d0b4e6c7$export$393edc798c47379d.displayName;
 const ReportSheet = ({ compound }) => {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Sheet, { children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx(SheetTrigger, { asChild: true, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(LSheet, { children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(LSheetTrigger, { asChild: true, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
       "button",
       {
         style: {
@@ -12545,7 +12545,7 @@ const ReportSheet = ({ compound }) => {
       }
     ) }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs(
-      SheetContent,
+      LSheetContent,
       {
         className: "light-labs-widget",
         style: {
@@ -12554,7 +12554,7 @@ const ReportSheet = ({ compound }) => {
         },
         children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
-            SheetHeader,
+            LSheetHeader,
             {
               style: {
                 paddingLeft: "24px",
@@ -12581,7 +12581,7 @@ const ReportSheet = ({ compound }) => {
                         children: "Testing Details"
                       }
                     ),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(SheetClose, { asChild: true, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(LSheetClose, { asChild: true, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
                       "button",
                       {
                         style: {
@@ -12874,7 +12874,7 @@ const ReportSheet = ({ compound }) => {
                             )
                           }
                         ),
-                        /* @__PURE__ */ jsxRuntimeExports.jsx(NegativeContent, { compound })
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(LNegativeContent, { compound })
                       ]
                     }
                   ),
@@ -13434,51 +13434,51 @@ const $69cb30bb0017df05$export$be92b6f5f03c0fe9 = $69cb30bb0017df05$export$b2539
 const $69cb30bb0017df05$export$54c2e3dc7acea9f5 = $69cb30bb0017df05$export$9712d22edc0d78c1;
 const $69cb30bb0017df05$export$41fb9f06171c75f4 = $69cb30bb0017df05$export$8114b9fdfdf9f3ba;
 const $69cb30bb0017df05$export$7c6e2c02157bb7d2 = $69cb30bb0017df05$export$bd905d70e8fd2ebb;
-const TabsList$1 = "_TabsList_1wd0b_1";
-const TabsTrigger$1 = "_TabsTrigger_1wd0b_13";
-const TabsContent$1 = "_TabsContent_1wd0b_54";
+const TabsList = "_TabsList_1wd0b_1";
+const TabsTrigger = "_TabsTrigger_1wd0b_13";
+const TabsContent = "_TabsContent_1wd0b_54";
 const styles$2 = {
-  TabsList: TabsList$1,
-  TabsTrigger: TabsTrigger$1,
-  TabsContent: TabsContent$1
+  TabsList,
+  TabsTrigger,
+  TabsContent
 };
-const Tabs = $69cb30bb0017df05$export$be92b6f5f03c0fe9;
-const TabsList = reactExports.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+const LTabs = $69cb30bb0017df05$export$be92b6f5f03c0fe9;
+const LTabsList = reactExports.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ jsxRuntimeExports.jsx(
   $69cb30bb0017df05$export$54c2e3dc7acea9f5,
   {
     ref,
-    className: cn(
+    className: lcn(
       styles$2.TabsList,
       className
     ),
     ...props
   }
 ));
-TabsList.displayName = $69cb30bb0017df05$export$54c2e3dc7acea9f5.displayName;
-const TabsTrigger = reactExports.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+LTabsList.displayName = $69cb30bb0017df05$export$54c2e3dc7acea9f5.displayName;
+const LTabsTrigger = reactExports.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ jsxRuntimeExports.jsx(
   $69cb30bb0017df05$export$41fb9f06171c75f4,
   {
     ref,
-    className: cn(
+    className: lcn(
       styles$2.TabsTrigger,
       className
     ),
     ...props
   }
 ));
-TabsTrigger.displayName = $69cb30bb0017df05$export$41fb9f06171c75f4.displayName;
-const TabsContent = reactExports.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+LTabsTrigger.displayName = $69cb30bb0017df05$export$41fb9f06171c75f4.displayName;
+const LTabsContent = reactExports.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ jsxRuntimeExports.jsx(
   $69cb30bb0017df05$export$7c6e2c02157bb7d2,
   {
     ref,
-    className: cn(
+    className: lcn(
       styles$2.TabsContent,
       className
     ),
     ...props
   }
 ));
-TabsContent.displayName = $69cb30bb0017df05$export$7c6e2c02157bb7d2.displayName;
+LTabsContent.displayName = $69cb30bb0017df05$export$7c6e2c02157bb7d2.displayName;
 const sides = ["top", "right", "bottom", "left"];
 const min = Math.min;
 const max = Math.max;
@@ -16047,26 +16047,26 @@ const $a093c7e1ec25a057$export$2881499e37b75b9a = $a093c7e1ec25a057$export$f7864
 const $a093c7e1ec25a057$export$be92b6f5f03c0fe9 = $a093c7e1ec25a057$export$28c660c63b792dea;
 const $a093c7e1ec25a057$export$41fb9f06171c75f4 = $a093c7e1ec25a057$export$8c610744efcf8a1d;
 const $a093c7e1ec25a057$export$7c6e2c02157bb7d2 = $a093c7e1ec25a057$export$e9003e2be37ec060;
-const TooltipContent$1 = "_TooltipContent_1ox36_1";
+const TooltipContent = "_TooltipContent_1ox36_1";
 const styles$1 = {
-  TooltipContent: TooltipContent$1
+  TooltipContent
 };
-const TooltipProvider = $a093c7e1ec25a057$export$2881499e37b75b9a;
-const Tooltip = $a093c7e1ec25a057$export$be92b6f5f03c0fe9;
-const TooltipTrigger = $a093c7e1ec25a057$export$41fb9f06171c75f4;
-const TooltipContent = reactExports.forwardRef(({ className, sideOffset = 4, ...props }, ref) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+const LTooltipProvider = $a093c7e1ec25a057$export$2881499e37b75b9a;
+const LTooltip = $a093c7e1ec25a057$export$be92b6f5f03c0fe9;
+const LTooltipTrigger = $a093c7e1ec25a057$export$41fb9f06171c75f4;
+const LTooltipContent = reactExports.forwardRef(({ className, sideOffset = 4, ...props }, ref) => /* @__PURE__ */ jsxRuntimeExports.jsx(
   $a093c7e1ec25a057$export$7c6e2c02157bb7d2,
   {
     ref,
     sideOffset,
-    className: cn(
+    className: lcn(
       styles$1.TooltipContent,
       className
     ),
     ...props
   }
 ));
-TooltipContent.displayName = $a093c7e1ec25a057$export$7c6e2c02157bb7d2.displayName;
+LTooltipContent.displayName = $a093c7e1ec25a057$export$7c6e2c02157bb7d2.displayName;
 const useIsomorphicLayoutEffect = typeof window !== "undefined" ? React.useLayoutEffect : React.useEffect;
 const IS_SERVER = typeof window === "undefined";
 function useMediaQuery(query, {
@@ -16127,7 +16127,7 @@ function App1() {
         justifyContent: "center",
         backgroundColor: "#E8EEF2"
       },
-      children: /* @__PURE__ */ jsxRuntimeExports.jsx(TooltipProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { footer: true, compound: "creatine" }) })
+      children: /* @__PURE__ */ jsxRuntimeExports.jsx(LTooltipProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { footer: true, compound: "creatine" }) })
     }
   );
 }
@@ -16142,7 +16142,7 @@ function App2() {
         justifyContent: "center",
         backgroundColor: "#E8EEF2"
       },
-      children: /* @__PURE__ */ jsxRuntimeExports.jsx(TooltipProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { footer: false, compound: "creatine" }) })
+      children: /* @__PURE__ */ jsxRuntimeExports.jsx(LTooltipProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { footer: false, compound: "creatine" }) })
     }
   );
 }
@@ -16157,7 +16157,7 @@ function App3() {
         justifyContent: "center",
         backgroundColor: "#E8EEF2"
       },
-      children: /* @__PURE__ */ jsxRuntimeExports.jsx(TooltipProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { footer: true, compound: "protein" }) })
+      children: /* @__PURE__ */ jsxRuntimeExports.jsx(LTooltipProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { footer: true, compound: "protein" }) })
     }
   );
 }
@@ -16172,7 +16172,7 @@ function App4() {
         justifyContent: "center",
         backgroundColor: "#E8EEF2"
       },
-      children: /* @__PURE__ */ jsxRuntimeExports.jsx(TooltipProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { footer: false, compound: "protein" }) })
+      children: /* @__PURE__ */ jsxRuntimeExports.jsx(LTooltipProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { footer: false, compound: "protein" }) })
     }
   );
 }
@@ -16223,21 +16223,21 @@ const Card = ({ footer, compound }) => {
 };
 const CardTabs = ({ compound }) => {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    Tabs,
+    LTabs,
     {
       defaultValue: "positive",
       style: { width: "100%", paddingTop: "12px" },
       children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(TabsList, { className: "w-full", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(TabsTrigger, { className: styles.TabTrigger, value: "positive", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(LTabsList, { className: "w-full", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(LTabsTrigger, { className: styles.TabTrigger, value: "positive", children: [
             "What",
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "'" }),
             "s in it?"
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(TabsTrigger, { className: styles.TabTrigger, value: "negative", children: "What's not in it?" })
+          /* @__PURE__ */ jsxRuntimeExports.jsx(LTabsTrigger, { className: styles.TabTrigger, value: "negative", children: "What's not in it?" })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(TabsContent, { value: "positive", children: /* @__PURE__ */ jsxRuntimeExports.jsx(PositiveContent, { compound }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(TabsContent, { value: "negative", children: /* @__PURE__ */ jsxRuntimeExports.jsx(NegativeContent, { compound }) })
+        /* @__PURE__ */ jsxRuntimeExports.jsx(LTabsContent, { value: "positive", children: /* @__PURE__ */ jsxRuntimeExports.jsx(LPositiveContent, { compound }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(LTabsContent, { value: "negative", children: /* @__PURE__ */ jsxRuntimeExports.jsx(LNegativeContent, { compound }) })
       ]
     }
   ) });
@@ -16262,8 +16262,8 @@ const LiveTestingSection = () => {
   const [open, setOpen] = React.useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
   if (isDesktop) {
-    return /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Tooltip, { delayDuration: 0, children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(TooltipTrigger, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(LTooltip, { delayDuration: 0, children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(LTooltipTrigger, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
         "div",
         {
           style: {
@@ -16316,7 +16316,7 @@ const LiveTestingSection = () => {
           ]
         }
       ) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(TooltipContent, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      /* @__PURE__ */ jsxRuntimeExports.jsx(LTooltipContent, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
         "p",
         {
           style: {
@@ -16344,8 +16344,8 @@ const LiveTestingSection = () => {
       ) })
     ] }) });
   }
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(Tooltip, { delayDuration: 0, open, children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx(TooltipTrigger, { onClick: () => setOpen((prev) => !prev), children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(LTooltip, { delayDuration: 0, open, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(LTooltipTrigger, { onClick: () => setOpen((prev) => !prev), children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
       "div",
       {
         style: {
@@ -16401,7 +16401,7 @@ const LiveTestingSection = () => {
         ]
       }
     ) }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(TooltipContent, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    /* @__PURE__ */ jsxRuntimeExports.jsx(LTooltipContent, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
       "p",
       {
         style: {
